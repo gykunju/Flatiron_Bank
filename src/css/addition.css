@@ -1,0 +1,19 @@
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+#footer{
+    background-color:#576CBC ;
+}
+#form{
+    background-color:#A5D7E8 ;
+}
+#description{
+    margin-left: 50px;
+}
+#category{
+    margin-left: 50px;
+}
+#amount{
+    margin-left: 50px;
+}

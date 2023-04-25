@@ -1,0 +1,37 @@
+#board{
+    background-color: #0B2447;
+    margin-bottom: auto;
+    border-bottom: 100px;
+}
+
+h1{
+    margin-top: 0%;
+    text-align: center;
+    background-color: #0B2447;
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: overline;
+    background-color: #0B2447;
+}
+#search-bar{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+input[type="text"]{
+    flex-grow: 0.5;
+    padding: 10px;
+    width: 500px;
+    margin-left: 250px;
+    background-color: #0B2447;
+}
+input[type="text"]:hover{
+    background-color: bisque;
+}
+
+#forsearch:hover{
+    background-color: bisque;
+}
