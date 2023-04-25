@@ -1,15 +1,14 @@
 import './App.css';
-import { useState } from 'react';
-import HeadBoard from './components/header';
-import AddTransaction from './components/addition'
-import TransactionTable from './components/table'
+import DisplayContainer from './components/DisplayContainer';
 
+//The app function is to return the components to the page
 function App() {
   return (
     <div className="App">
-      <HeadBoard /> 
-      <TransactionTable  />
-      <AddTransaction />
+      <div>
+        <h1>Flatiron Bank</h1>
+      </div>
+      <DisplayContainer />
     </div>
   );
 }
