@@ -1,5 +1,5 @@
 import './App.css';
-import DisplayContainer from './components/DisplayContainer';
+import TransactionManager from './components/TransactionManager';
 
 //The app function is to return the components to the page
 function App() {
@@ -8,7 +8,7 @@ function App() {
       <div>
         <h1>Flatiron Bank</h1>
       </div>
-      <DisplayContainer />
+      <TransactionManager />
     </div>
   );
 }

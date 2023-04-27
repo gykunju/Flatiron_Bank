@@ -1,5 +1,6 @@
 import '../css/TransactionTable.css'
 
+//The function enables us to outline the table and its contents using props gotten from the TableList component
 function TransactionTable({date, description, category, amount}){
     return(
         <div id="trans">            
