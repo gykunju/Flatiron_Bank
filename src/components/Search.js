@@ -1,8 +1,9 @@
 import React from 'react'
+import '../css/Search.css'
 
 function Search({Search, handleSearch}) {
   return (
-    <div>
+    <div id="search">
         <input 
         className='search-input'
         type='text'

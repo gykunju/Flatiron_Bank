@@ -7,7 +7,7 @@ import AdditionForm from './AdditionForm';
 function TransactionManager() {
     const [transactions, setTransactions] = useState([])
     const [search, setSearch] = useState("")
-    const [query, setQuery] = useState("")
+    //const [query, setQuery] = useState("")
 
 
 //We encorporate useEffect and fetch to get data from our server the
@@ -15,13 +15,13 @@ function TransactionManager() {
         fetch("http://localhost:3000/transactions")
         .then((resp)=> resp.json())
         .then((data)=> setTransactions(data))
-        .catch((error) => console.error('Error fetching transactions:', error));
+        //.catch((error) => console.error('Error fetching transactions:', error));
     }, []);
 
     //The event handler for the search function
     function handleSearch(e){
         setSearch(e.target.value)
-        setQuery(e.target.value.toLowerCase())
+        //setQuery(e.target.value.toLowerCase())
     }
 
    //Add new transaction after the form has been submitted
@@ -47,12 +47,12 @@ function TransactionManager() {
    }
 
      //The filter function to give us the desired components
-     const filteredtransactions= transactions.map((transaction)=>transaction.category.toLowerCase().includes(search.toLocaleLowerCase()))
+    //const filteredTransactions= transactions.map((transaction)=>transaction.category.includes(search))
 
   return (
     <div>
         <Search search={search} handleSearch={handleSearch} />
-        <TableList transactions={filteredtransactions} />
+        <TableList transactions={transactions} />
         <AdditionForm addTransaction={addTransaction} />
     </div>
   )
