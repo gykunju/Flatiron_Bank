@@ -12,7 +12,7 @@ function Search({Search, handleSearch}) {
         id='search'
         onChange={handleSearch}
         />
-        <button className=''>Search</button>
+        <button id='search-button'>search</button>
     </div>
   )
 }

@@ -5,8 +5,9 @@ import TransactionManager from './components/TransactionManager';
 function App() {
   return (
     <div className="App">
-      <div>
+      <div id='heading'>
         <h1>Flatiron Bank</h1>
+        <h4>Where banking becomes hobby</h4>
       </div>
       <TransactionManager />
     </div>

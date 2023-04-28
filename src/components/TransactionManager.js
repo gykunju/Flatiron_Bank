@@ -47,7 +47,11 @@ function TransactionManager() {
    }
 
      //The filter function to give us the desired components
-    //const filteredTransactions= transactions.map((transaction)=>transaction.category.includes(search))
+   //function filteredTransactions(){transactions.filter((transaction)=>{
+        //const searchTerm = search;
+        //return transaction.category.toLowerCase().includes(searchTerm)        
+        
+//})}
 
   return (
     <div>
